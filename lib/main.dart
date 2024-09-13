@@ -138,28 +138,28 @@ class MyApp extends StatelessWidget {
         //RootScreen(), //위에 주석하고 아래 추가 영욱
         // initialRoute: '/home',
         //영욱 추가 -> root_screen으로 대체(기존 코드 주석처리)
-        routes: {
-          /* '/ai_recommend': (context) => AIRecommendScreen(),
-          '/notifications': (context) => NotificationsScreen(),*/
-          '/home': (context) => HomeScreen(),
-          // '/profile': (context) => ProfileScreen(),
-          '/realtime_list_screen': (context) => RealtimeListScreen(),
-          '/root_screen':(context) => RootScreen(),
-          '/notification_screen': (context) => NotificationScreen(),
-          '/sign_up': (context) => SignUpScreen(), // Sign up route 추가
-          // 리뷰 북마크 찜목록 공지사항 추가 안율현
-          '/bookmark_list': (context) => BookmarkListScreen(),
-          '/heart_list': (context) => HeartListScreen(),
-          '/announcement_list': (context) => AccouncementListScreen(),
-          '/login': (context) => LoginScreen(),
-          '/sign_up2': (context) => SignUp2(),
-          '/sign_up3': (context) => SignUp3(),
-          '/login_opening_screen': (context) => LoginOpeningScreen(),
-          '/searchingpage': (context) => Searchingpage(),
-          '/daumpostcodesearchexample': (context) => DaumPostcodeSearch(),
-      
-          // '/restaurant_map' : (context) => RestaurantMap(),
-        },
+          routes: {
+            /* '/ai_recommend': (context) => AIRecommendScreen(),
+            '/notifications': (context) => NotificationsScreen(),*/
+            '/home': (context) => HomeScreen(),
+            // '/profile': (context) => ProfileScreen(),
+            '/realtime_list_screen': (context) => RealtimeListScreen(),
+            '/root_screen':(context) => RootScreen(),
+            '/notification_screen': (context) => NotificationScreen(),
+            '/sign_up': (context) => SignUpScreen(), // Sign up route 추가
+            // 리뷰 북마크 찜목록 공지사항 추가 안율현
+            '/bookmark_list': (context) => BookmarkListScreen(),
+            // '/heart_list': (context) => HeartListScreen(),
+            '/announcement_list': (context) => AccouncementListScreen(),
+            '/login': (context) => LoginScreen(),
+            '/sign_up2': (context) => SignUp2(),
+            '/sign_up3': (context) => SignUp3(),
+            '/login_opening_screen': (context) => LoginOpeningScreen(),
+            '/searchingpage': (context) => Searchingpage(),
+            '/daumpostcodesearchexample': (context) => DaumPostcodeSearch(),
+
+            // '/restaurant_map' : (context) => RestaurantMap(),
+          },
       
       ),
     );

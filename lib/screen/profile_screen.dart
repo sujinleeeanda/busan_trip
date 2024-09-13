@@ -399,7 +399,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         onTap: () {
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder:  (context) => HeartListScreen()),
+                            MaterialPageRoute(
+                              builder: (context) {
+                                // UserModel을 통해 로그인한 사용자 정보 가져오기
+                                final userId = Provider.of<UserModel>(context, listen: false).loggedInUser.u_idx;
+                                // HeartListScreen으로 이동하면서 userId를 전달
+                                return HeartListScreen(userId: userId);
+                              },
+                            ),
                           );
                         },
                       ),
